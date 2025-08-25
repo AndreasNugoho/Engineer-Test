@@ -103,7 +103,7 @@ class ServiceCenter {
         this._repairLog.sort((a, b) => parseInt(a.name.split(' ')[1]) - parseInt(b.name.split(' ')[1]));
         
         const formattedLog = this._repairLog.map((customer) => ({
-            '(index)': parseInt(customer.name.split(' ')[1]),
+            // '(index)': parseInt(customer.name.split(' ')[1]),
             customerName: customer.name,
             phone: customer.phoneSeries,
             phoneRepairedBy: customer.repairedBy,
